@@ -9,7 +9,8 @@
         "prod": "npm run production",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "heroku-prebuild": "npm install -f",
-"heroku-postbuild": "npm run build"
+        "heroku-postbuild": "npm run build",
+        "start": "node index.js"
     },
     "devDependencies": {
         "axios": "^0.19",
@@ -27,7 +28,9 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.1",
+        "express": "^4.17.1",
         "moment": "^2.29.1",
+        "server-static": "^2.0.5",
         "vue-router": "^3.4.6",
         "vuex": "^3.5.1"
     }
